@@ -42,6 +42,7 @@ header li {
   margin-right: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 img {
@@ -64,6 +65,7 @@ button {
   display: block;
   margin: 0 auto;
   font-size: 24px;
+  padding: 10px;
 }
 
 button:hover {
@@ -73,8 +75,8 @@ button:hover {
 
 .flask-container {
   display: flex;
-  flex-direction: column; /* Ensure items stack vertically */
-  align-items: center; /* Center items horizontally */
+  flex-direction: column;
+  align-items: center; 
 }
 
 footer {
@@ -98,25 +100,6 @@ footer {
   height: 100px; 
   width: auto; 
   margin-top: 10px; 
-}
-
-@media only screen and (max-width: 600px) {
-  .main-image {
-    width: 400px;
-    height: 400px;
-  }
-
-  .about-box {
-    width: 400px;
-  }
-
-  .spinner {
-    justify-content: center;
-    margin: auto;
-    top: 25%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-  }
 }
 
 .about-link {
