@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Random Image Generator</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" type="image/x-icon" href="/static/favicon.png">
 </head>
 <body>
   <header>
@@ -17,10 +18,21 @@
   </header>
 
  
-    <button @click="generateImage">Generate Image</button>
+    <button @click="generateImage">Random Image</button>
     <div class="main-image">
       <img id="random-image" :src="initialImage" alt="Random Image">
     </div>
+  <footer>
+    <div class="container">
+      <div class="made-with">
+        <h3>Made With</h3>
+      </div>
+      <div class="flask-container">
+        <img src="{{ url_for('static', filename='flask-logo-png-transparent.png') }}" alt="Flask" class="flask">
+      </div>
+    </div>
+  </footer>
+
 
   <script src="{{ url_for('static', filename='main.js') }}"></script>
 </body>

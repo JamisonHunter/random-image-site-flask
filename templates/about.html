@@ -1,0 +1,38 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" type="image/x-icon" href="/static/favicon.png">
+</head>
+<body>
+  <header>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+    </ul>
+  </header>
+
+  <div class="about-box">
+    <h1 class="about-title">About</h1>
+    <p>This website is a simple application meant to fetch random images from the "Lorem Picsum" API. It is built using the Python Flask web framework. The purpose of this project is to build the app multiple times using different technologies. Thank you for stopping by!</p>
+  </div>
+    
+  <footer>
+    <div class="container">
+      <div class="made-with">
+        <h3>Made With</h3>
+      </div>
+      <div class="flask-container">
+        <img src="{{ url_for('static', filename='flask-logo-png-transparent.png') }}" alt="Flask" class="flask">
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
