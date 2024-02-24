@@ -109,4 +109,45 @@ footer {
   .about-box {
     width: 400px;
   }
+
+  .spinner {
+    justify-content: center;
+    margin: auto;
+    top: 25%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.about-link {
+  text-align: center;
+}
+
+.about-link a {
+  color: white; 
+  text-decoration: none; 
+}
+
+.about-link a:hover {
+  color: blue;
+}
+
+.spinner {
+  border: 8px solid rgba(255, 255, 255, 0.3);
+  border-top: 8px solid blue;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 75%;
+  left: 45.5%;
+  transform: translate(-50%, -50%);
+  transform-origin: center; 
+  display: none; 
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
