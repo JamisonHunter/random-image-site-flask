@@ -1,20 +1,25 @@
-# Flask app.py
-from flask import Flask, render_template, jsonify
+# Imports
 import requests
+from flask import Flask, render_template, jsonify
 
+# Defining the app.
 app = Flask(__name__, static_folder='static')
 
 
+# Home
 @app.route('/')
 def home():
   return render_template('index.html')
 
 
+# About
 @app.route('/about')
 def about():
   return render_template('about.html')
 
 
+# Image API
+# The JavaScript calls /random-image and the Flask app returns a random image from Lorem Picsum.
 @app.route('/random-image')
 def random_image():
   width = 1440
