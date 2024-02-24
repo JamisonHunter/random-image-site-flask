@@ -1,0 +1,14 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.main-image {
+  height: 700px;
+  width: 700px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
