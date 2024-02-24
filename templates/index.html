@@ -17,30 +17,11 @@
   </header>
 
  
-    <button @click="generateImage">Generate Random Image</button>
+    <button @click="generateImage">Generate Image</button>
     <div class="main-image">
       <img id="random-image" :src="initialImage" alt="Random Image">
     </div>
 
-  <script>
-    // Fetch initial random image URL
-    fetch('/random-image')
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById('random-image').src = data.image_url;
-      });
-
-    // Function to generate new random image
-    function generateImage() {
-      fetch('/random-image')
-        .then(response => response.json())
-        .then(data => {
-          document.getElementById('random-image').src = data.image_url;
-        });
-    }
-
-    // Bind generateImage function to button click event
-    document.querySelector('button').addEventListener('click', generateImage);
-  </script>
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
 </body>
 </html>

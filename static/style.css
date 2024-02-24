@@ -3,9 +3,29 @@ body {
   color: white;
 }
 
+header {
+  background-color: midnightblue;
+  text-align: center;
+}
+
+
+header ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+header li {
+  display: inline; 
+  margin: 0 20px;
+}
+
 .main-image {
+  border: 2px solid midnightblue;
   height: 700px;
   width: 700px;
+  display: block;
+  margin: auto;
 }
 
 img {
