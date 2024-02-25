@@ -15,12 +15,14 @@
       <li><a href="/about">About</a></li>
     </ul>
   </header>
-
-  <button @click="generateImage">Random Image</button>
-  <div class="main-image">
+  <div class="container">
+    <button @click="generateImage">Random Image</button>
     <div id="spinner" class="spinner"></div>
+  </div>
+  <div class="main-image">
     <img id="random-image" :src="initialImage">
   </div>
+  
 
   <footer>
     <div class="container">
